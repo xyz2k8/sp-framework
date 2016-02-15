@@ -1,0 +1,14 @@
+<h2>GET 请求: 通过Github公共API获取表情.</h2>
+<p> 这是从Github公共API（https://api.github.com/emojis）获取的表情列表: </p>
+<span id="content">
+    <h4>总共获取到 <strong class="highlight">{{emojis.length}}</strong> 个表情.</h4>
+    <hr>
+    <ul>
+        <li data-repeat="emojis" data-item="data" class="inline">
+            <figure>
+                <img data-src='{{data.value}}' width='80' height='80'>
+                <figcaption>{{data.key}}</figcaption>
+            </figure>
+        </li>
+    </ul>
+</span>
